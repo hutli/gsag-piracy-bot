@@ -1,0 +1,136 @@
+<head>
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, user-scalable=0"
+  />
+
+  <!-- Primary Meta Tags -->
+  <title>GSAG Piracy Interface</title>
+  <meta name="title" content="GSAG Piracy Interface" />
+  <meta
+    name="description"
+    content="GSAG interface for reporting piracy to Discord."
+  />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://piracy.gsag.space/" />
+  <meta property="og:title" content="GSAG Piracy Interface" />
+  <meta
+    property="og:description"
+    content="GSAG interface for reporting piracy to Discord."
+  />
+  <meta property="og:image" content="https://piracy.gsag.space/meta.jpg" />
+  <meta property="fb:app_id" content="966242223397117" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://piracy.gsag.space/" />
+  <meta property="twitter:title" content="GSAG Piracy Interface" />
+  <meta
+    property="twitter:description"
+    content="GSAG interface for reporting piracy to Discord."
+  />
+  <meta property="twitter:image" content="https://piracy.gsag.space/meta.jpg" />
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#333333" />
+  <meta name="msapplication-TileColor" content="#b91d47" />
+  <meta name="theme-color" content="#333333" />
+
+  <link rel="stylesheet" href="/css/main.css" />
+</head>
+<body>
+  <script src="/js/main.js"></script>
+  <form>
+    <fieldset>
+      <legend>Crew:</legend>
+      <div class="autocomplete-input-container">
+        <div class="results-container"></div>
+        <input
+          class="form-input"
+          onkeydown="return search('members', event, this, 'nick');"
+          onblur="return search('members', event, this, 'nick', keys=null);"
+          type="text"
+          id="crew"
+          name="crew"
+        />
+      </div>
+    </fieldset>
+    <hr size="5px" color="lightblue" />
+    <fieldset>
+      <legend>Route:</legend>
+      <div class="autocomplete-input-container">
+        <div class="results-container"></div>
+        <input
+          class="form-input"
+          onkeydown="return search('locations', event, this, 'name');"
+          onblur="return search('locations', event, this, 'name', keys=null);"
+          type="text"
+          name="routes"
+        />
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend>Target ship:</legend>
+      <div class="autocomplete-input-container">
+        <div class="results-container"></div>
+        <input
+          class="form-input"
+          onkeydown="return search('ships', event, this, 'Name');"
+          onblur="return search('ships', event, this, 'Name', keys=null);"
+          type="text"
+          name="target_ships"
+        />
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend>Target player name(s):</legend>
+      <div class="autocomplete-input-container">
+        <div class="results-container"></div>
+        <input
+          class="form-input"
+          onkeydown="return search(null, event, this, keys=['Enter', ' ', ',']);"
+          onblur="return search(null, event, this, keys=null);"
+          type="text"
+          name="target_names"
+        />
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend>Booty:</legend>
+      <div class="autocomplete-input-container">
+        <div class="results-container"></div>
+        <input
+          class="form-input"
+          onkeydown="return splitSearch('resources', event, this, 'name');"
+          onblur="return splitSearch('members', event, this, 'name', keys=null);"
+          type="text"
+          name="booty"
+        />
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend>Last hit:</legend>
+      <div class="autocomplete-input-container">
+        <div class="results-container"></div>
+        <input
+          class="form-input"
+          onkeydown="return search('members', event, this, 'nick');"
+          onblur="return search('members', event, this, 'nick', keys=null);"
+          type="text"
+          name="last_hit"
+        />
+      </div>
+    </fieldset>
+    <input
+      value="Submit"
+      id="submit"
+      type="button"
+      onclick="return postToDiscord(this.parentElement);"
+    />
+  </form>
+</body>

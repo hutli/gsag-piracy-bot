@@ -1,0 +1,49 @@
+html {
+  background-color: #333333;
+  color: whitesmoke;
+}
+
+body {
+  margin: auto;
+  max-width: 800px;
+}
+.form-input {
+  width: 100%;
+  border: none;
+  height: 30px;
+  background-color: lightblue;
+  color: black;
+}
+
+.autocomplete-input-container {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid black;
+  background-color: lightblue;
+  color: black;
+}
+.autocomplete-input-container > * {
+  margin: 2px;
+}
+.results-container {
+  display: flex;
+  flex-direction: row;
+}
+.result-box {
+  cursor: pointer;
+  width: fit-content;
+  border: 1px solid black;
+  white-space: nowrap;
+  background-color: lightgreen;
+  vertical-align: middle;
+  padding: 3px;
+  margin: auto 5px auto 5px;
+}
+#submit {
+  background-color: lightblue;
+  color: black;
+  width: -webkit-fill-available;
+  font-size: large;
+  padding: 10px;
+  margin: 10px;
+}

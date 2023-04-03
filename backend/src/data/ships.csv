@@ -1,0 +1,175 @@
+Name,Manufacturer,Role,Size,Mass,Cargo (SCU),Production State,Price (USD),Buy Cost,Stowage Space,Stowage / Cost,Cargo / 100k Cred,Hull HP,Shield HP,Combat Speed,Max Speed,Hydrogen Fuel Capacity,QT Fuel Capacity,Weapon Capacitor Size,Turret Capacitor Size,Forward Accel,Retro Accel,Min Crew,Max Crew,Series,Rentable,Rent Cost AC,Claim Time,Expedite Time,Expedite Cost,Weapon Count,Missile Rack Count,Turret Count,Quantum Drive 1 Size,Utility Item Count
+100i,Origin Jumpworks,Starter/Touring,small,48143,2,Flight ready,50,"654,000","2,000",3.06,0.31,"2,200",,210,"1,000","65,000",700,,,115.7,34.8,1,1,100,,"19,620",1,0,635,1,1,0,1,0
+125a,Origin Jumpworks,Starter/Light Fighter,small,48143,2,Flight ready,60,"791,000","2,000",2.53,0.25,"2,200",,230,"1,150","65,000",700,,,115.7,34.8,1,1,100,,"23,730",1,0,635,1,2,0,1,0
+135c,Origin Jumpworks,Starter/Light Freight,small,48143,6,Flight ready,65,"839,000","6,000",7.15,0.72,"2,200",,190,"1,095","65,000",700,,,115.7,34.8,1,1,100,,"25,170",1,0,675,1,1,0,1,0
+300i,Origin Jumpworks,Touring,small,79677,8,Flight ready,60,"767,200","8,000",10.43,1.04,"4,750",,204,"1,188","105,000",680,,,94.7,41.6,1,1,300,yes,"23,016",6,2,"3,034",2,1,0,1,0
+315p,Origin Jumpworks,Pathfinder,small,80592,12,Flight ready,65,"882,600","12,000",13.60,1.36,"4,750",,210,"1,223","1,045,000",830,,,93.6,41.1,1,1,300,false,"26,478",6,2,"3,210",1,1,0,1,1
+325a,Origin Jumpworks,"Luxury, Interdiction",small,72500,4,Flight ready,70,"944,200","4,000",4.24,0.42,"4,750",,225,"1,315","105,000",583,,,95.1,41.8,1,1,300,false,"7,000",7,2,"3,545",2,2,0,1,0
+350r,Origin Jumpworks,Racing,small,88107,4,Flight ready,125,"1,602,100","4,000",2.50,0.25,"2,050",,258,"1,347","157,500",583,,,100.5,37.6,1,1,300,false,"48,063",16,2,"4,050",2,1,0,1,0
+400i,Origin Jumpworks,Pathfinder,large,430057,42,Flight ready,250,"6,352,700","42,000",6.61,0.66,"35,000",,185,"1,250","5,339,744","4,920",,,52.9,25.1,1,3,,false,,35,6,"7,258",1,2,1,2,0
+600i Explorer,Origin Jumpworks,Expedition,large,1622607,40,Flight ready,475,"9,475,100","40,000",4.22,0.42,,,109,955,,,,,,,2,5,600i,true,,35,11,"17,550",1,1,1,2,0
+600i Touring,Origin Jumpworks,Touring,large,1613414,16,Flight ready,435,"9,894,000","16,000",1.62,0.16,"19,800",,109,955,"2,385,000","3,000",,,35.3,15.0,1,5,600i,false,,70,11,"17,550",1,1,1,2,0
+85X,Origin Jumpworks,Touring,snub,19834,0,Flight ready,50,170,0,0.00,,,,190,"1,183",,,,,,,1,2,,true,,1,0,510,1,0,1,1,0
+890 Jump,Origin Jumpworks,Luxury Touring,capital,4590000,100,Flight ready,950,"32,294,500","460,000",14.24,0.31,"100,000",,80,900,"15,000,000","25,000",,,18.3,8.6,3,8,,no,,67,22,"33,750",0,1,3,4,0
+A1 Spirit,Crusader Industries,Bomber,medium,,0,In production,175,,,,,,,,,,,,,,,1,2,Spirit,false,,,,,2,2,1,2,0
+A2 Hercules Starlifter,Crusader Industries,Heavy Bomber / Military Transport,large,3139240,216,Flight ready,750,"5,525,000","234,000",42.35,3.91,"65,250",,135,963,"13,155,000","88,000",,,53.1,5.6,1,8,Hercules,false,,41min,,,1,1,3,3,2
+Apollo Medivac,Roberts Space Industries,Support - Medical,medium,376500,28,In concept,275,,,,,,,195,,,,,,,,1,2,Apollo,,,,,,0,0,2,2,0
+Apollo Triage,Roberts Space Industries,Support - Medical,medium,376500,28,In concept,250,,,,,,,205,,,,,,,,1,2,Apollo,,,,,,0,0,2,2,0
+Ares Star Fighter Inferno,Crusader Industries,Heavy Fighter,medium,329001,0,Flight ready,250,"2,859,000",0,0.00,,"10,000",,170,"1,120","450,000","5,000",,,86.2,28.2,1,1,Ares,false,,10,3,"5,065",1,1,0,2,2
+Ares Star Fighter Ion,Crusader Industries,Heavy Fighter,medium,329001,0,Flight ready,250,"2,859,000",250,0.09,,"10,000",,170,"1,120","450,000","5,000",,,86.2,28.2,1,1,Ares,false,,10,3,"5,065",1,1,0,2,2
+Arrow,Anvil Aerospace,Light Fighter,small,32310,0,Flight ready,75,"972,300",0,0.00,,"4,600",,200,"1,235","75,000",583,,,127.4,50.3,1,1,,true,,6,2,"3,375",1,2,1,1,0
+Auris,Chimera Communications,Recon,large,200000,0,Unknown,,,,,,,,,899,,,,,,,0,0,,,,,,,,,,,
+Aurora CL,Roberts Space Industries,Light Freight,small,26422,6,Flight ready,45,"487,600","6,000",12.31,1.23,"3,820",,138,"1,093","45,000",583,,,89.9,43.2,1,1,Aurora,,"4,500",2,0,340,2,1,0,1,1
+Aurora ES,Roberts Space Industries,Pathfinder,small,26486,3,Flight ready,20,"124,100",650,5.24,2.42,"3,820",,143,"1,141","45,000",583,,,89.7,43.1,1,1,Aurora,true,2,1,0,255,2,1,0,1,1
+Aurora LN,Roberts Space Industries,Light Fighter,small,28714,3,Flight ready,40,"338,400",650,1.92,0.89,"3,820",,138,"1,208","45,000",583,,,82.8,39.7,1,1,Aurora,true,"3,500",2,0,340,1,1,0,1,1
+Aurora LX,Roberts Space Industries,Pathfinder,small,26736,3,Flight ready,35,"245,500",650,2.65,1.22,"3,820",,143,"1,199","45,000",700,,,88.9,42.7,1,1,Aurora,,"3,000",3,0,510,2,1,0,1,1
+Aurora MR,Roberts Space Industries,Light Fighter,small,27893,3,Flight ready,30,"184,900",650,3.52,1.62,"3,820",,147,"1,212","45,000",583,,,85.2,40.9,1,1,Aurora,false,"2,500",0,0,340,2,1,0,1,1
+Avenger Stalker,Aegis Dynamics,Interdiction,small,50786,0,Flight ready,60,"882,200",650,0.74,,"5,000",,184,"1,307","90,000",583,,,51.6,9.3,1,1,Avenger,false,"6,000",2,0,425,2,1,0,1,0
+Avenger Titan,Aegis Dynamics,Light Freight,small,51363,8,Flight ready,55,"785,600","8,000",10.18,1.02,"5,000",,189,"1,113","90,000",583,,,51.1,9.2,1,1,Avenger,true,,0,0,395,2,1,0,1,0
+Avenger Trainer,Aegis Dynamics,Combat,small,50765,,Active for Squadron 42,,,,,,,,,,,,,,,,1,2,Avenger,,,,,,,,,,
+Avenger Warlock,Aegis Dynamics,Interdiction,small,47232,0,Flight ready,85,"1,155,500",650,0.56,,"5,000",,181,"1,306","90,000",583,,,55.5,10.0,1,1,Avenger,true,,1,0,510,2,1,0,1,1
+Bengal,Roberts Space Industries,Carrier,capital,155608432,,In production,,,,,,,,30,900,,,,,,,,755,,,,,,,0,0,5,2,0
+Blade,Vanduul Clans,Light Fighter,small,10000,0,Flight ready,,"3,370,600",,0.00,,"3,600",,130,600,"522,500",583,,,139.6,55.5,1,1,,false,,4,,,,,,,
+Blade (replica),Esperia,Light Fighter,small,27019,0,Flight ready,275,"3,370,600",0,0.00,,,,214,"1,238",,,,,,,1,1,,false,,8,1,"2,110",2,1,0,1,0
+Buccaneer,Drake Interplanetary,Interdiction,small,40527,0,Flight ready,110,"1,410,100",0,0.00,,"6,400",,210,"1,317","75,000",583,,,92.5,29.2,1,1,,false,"11,000",5,1,"2,700",3,1,0,1,0
+C1 Spirit,Crusader Industries,Medium Freight,medium,,48,In production,110,,,,,,,,,,,,,,,1,2,Spirit,false,,,,,2,1,1,2,0
+C2 Hercules Starlifter,Crusader Industries,Transport,large,3139240,696,Flight ready,400,"4,925,500","672,000",136.43,14.13,"45,000",,135,963,"13,155,000","88,000",,,53.2,5.6,1,2,Hercules,no,,23min,,,1,0,1,3,2
+C8 Pisces,Anvil Aerospace,Pathfinder,snub,48143,4,Flight ready,,"400,000","4,000",10.00,1.00,"1,500",,142,"1,150","522,500",645,,,50.6,4.9,1,1,Pisces,false,,2,0,340,1,1,0,1,0
+C8R Pisces Rescue,Anvil Aerospace,Medical,snub,"48,143",,Flight ready,65,,"4,000",,,"1,500",,,,"522,500",645,,,50.6,4.9,,,,,,0,0,365,1,1,0,1,0
+C8X Pisces Expedition,Anvil Aerospace,Exploration,snub,48143,4,Flight ready,45,"406,000","4,000",9.85,0.99,"1,500",,142,"1,150","522,500",645,,,50.6,4.9,1,3,,,,0,0,340,2,1,0,1,0
+Carrack,Anvil Aerospace,Expedition,large,4397858,456,Flight ready,600,"26,657,500","456,000",17.11,1.71,"60,000",,208,"1,236","15,786,000","44,000",,,"1,612.6",500.9,4,6,,false,,45,15,"22,500",0,0,2,3,0
+Caterpillar,Drake Interplanetary,Heavy freight,large,1660063,576,Flight ready,330,"4,686,600","576,000",122.90,12.29,"26,100",,99,894,"2,505,000","11,000",,,26.6,14.7,1,4,,false,,18,6,"9,000",2,0,1,3,0
+Cleaver,Vanduul Clans,Boarding,snub,,,In production,,,,,,,,100,900,,,,,,,,,,,,,,,,,,,
+Constellation Andromeda,Roberts Space Industries,Medium Freight,large,430057,96,Flight ready,240,"3,548,000","96,000",27.06,2.71,"80,000",,144,911,"660,000","3,000",,,46.3,23.2,3,4,Constellation,true,,14,4,"6,750",1,2,1,2,0
+Constellation Aquila,Roberts Space Industries,Expedition,large,449743,96,Flight ready,310,"4,926,700","96,000",19.49,1.95,"80,000",,146,988,"1,045,000","3,000",,,44.3,22.1,3,4,Constellation,false,,14,4,"6,750",1,1,1,2,1
+Constellation Phoenix,Roberts Space Industries,Touring,large,427001,96,Flight ready,350,"5,658,800","8,000",1.41,1.70,"80,000",,144,911,"660,000","3,000",,,46.7,23.3,3,4,Constellation,true,,22,7,"10,800",1,1,1,2,0
+Constellation Taurus,Roberts Space Industries,Medium Freight,large,427001,174,Flight ready,190,"3,256,400","8,000",2.46,5.34,"70,000",,144,911,"660,000","3,000",,,46.7,23.3,3,4,Constellation,false,,12,4,"6,742",1,1,1,2,0
+Corsair,Drake Interplanetary,Exploration,large,,72,Flight ready,250,,"15,000",,,"15,000",,150,949,"360,000","5,000",,,53.5,26.6,1,4,,false,,13,4,"6,750",2,1,2,2,0
+Crucible,Anvil Aerospace,Heavy Repair,large,3650500,230,In concept,350,,,,,,,,,,,,,,,3,8,,,,,,,,,,,
+Cutlass Black,Drake Interplanetary,Medium Fighter & Freight,medium,246557,46,Flight ready,100,"1,385,300","46,000",33.21,3.32,"17,200",,165,"1,114","360,000","2,500",,,56.3,16.2,1,3,Cutlass,true,"10,000",6,2,"3,375",,2,1,2,1
+Cutlass Blue,Drake Interplanetary,Interdiction,medium,226700,12,Flight ready,175,"2,493,500","12,000",4.81,0.48,"18,000",,198,"1,210","360,000","2,500",,,61.2,17.6,1,3,Cutlass,,,14,2,"3,715",2,1,1,2,2
+Cutlass Red,Drake Interplanetary,Search & Rescue,medium,226700,12,Flight ready,135,"1,810,500","12,000",6.63,0.66,"17,600",,183,"1,198","360,000","2,500",,,61.2,17.6,2,2,Cutlass,false,,9,3,"4,725",1,0,0,2,2
+Cutlass Steel,Drake Interplanetary,Dropship,medium,226700,0,Flight ready,235,"1,355,300","1,500",1.11,,"18,000",,150,,"360,000","2,500",,,56.3,16.2,1,3,Cutlass,,,,,,2,,3,2,
+Cutter,Drake Interplanetary,Light Freight,small,86877,4,Flight ready,45,,650,,,"8,000",,160,"1,050","660,000","6,000",,,25.3,35.6,1,1,,,,1,0,425,1,1,0,1,2
+Cutter (drone),Aegis Dynamics,Drone,small,5000,,In Production,,,,,,,,,,,,,,,,0,0,,,,,,,,,,,
+Cydnus,Greycat Industrial,Mining,medium,220978,,Active for Squadron 42,,,,,,,,75,900,,,,,,,1,2,,false,,,,,,,,,
+Defender,Banu Souli,Light Fighter,small,244726,0,Flight ready,220,"2,781,000",650,0.23,,"4,000",,203,"1,200","430,000","2,750",,,91.2,39.0,1,2,,false,,8,2,"4,220",1,1,0,1,0
+Devastator,Anvil Aerospace,,,,,In lore,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Dragonfly,Drake Interplanetary,Racing,snub,2068,0,Flight ready,40,"272,700",0,0.00,,880,,105,500,"15,000",0,,,43.5,38.7,1,2,,true,,00,0,55,1,0,0,,0
+Driller,Vanduul Clans,Escort Carrier,capital,10218790,,Active for Squadron 42,,,,,,,,60,900,,,,,,,,,,,,,,,,,,,
+E1 Spirit,Crusader Industries,VIP Transport,medium,,0,In production,150,,,,,,,,,,,,,,,1,2,Spirit,false,,,,,2,1,1,2,0
+Eclipse,Aegis Dynamics,Stealth Bomber,small,55920,0,Flight ready,300,"3,490,000",0,0.00,,"5,000",,146,981,"90,000","1,167",,,58.8,15.4,1,1,,false,,15,5,"7,735",1,1,0,1,0
+Endeavor,Musashi Industrial and Starflight Concern,Heavy Science,capital,4055000,500,In concept,350,,,,,,,,,,,,,,,3,5,,,,,,,,,,,
+Expanse,Musashi Industrial and Starflight Concern,Refinery,medium,,64,In concept,150,,,,,,,,,,,,,,,1,1,,,,,,,1,0,0,,0
+F7A Hornet,Anvil Aerospace,Medium Fighter,small,73317,0,In concept,,,,,,"8,000",,210,"1,229","160,000",600,,,38.1,19.0,1,1,F7,,,,,,1,1,2,1,2
+F7A Hornet Mk II,Anvil Aerospace,Military Close Support,small,74132,0,Active for Squadron 42,,,,,,,,200,"1,337",,,,,,,,1,F7,,,,,,1,1,2,1,2
+F7A-R Hornet Tracker,Anvil Aerospace,Scout,small,,,In concept,,,,,,,,,,,,,,,,1,1,F7,,,,,,,,,,
+F7C Hornet,Anvil Aerospace,Medium Fighter,small,74132,2,Flight ready,110,"1,492,700",,0.00,0.13,"4,000",,192,"1,229","120,000",583,,,47.4,13.9,1,1,F7,false,"11,000",6,2,"3,375",2,2,0,1,1
+F7C-M Super Hornet,Anvil Aerospace,Medium Fighter,small,78886,0,Flight ready,180,"2,132,600",0,0.00,,"8,000",,192,"1,229","135,000",583,,,44.5,13.0,1,2,F7,false,"16,500",15,2,"3,800",1,1,2,1,0
+F7C-R Hornet Tracker,Anvil Aerospace,Pathfinder,small,74197,0,Flight ready,140,"1,832,100",0,0.00,,"4,000",,192,"1,229","120,000",583,,,47.3,13.8,1,1,F7,false,"14,000",13,2,"3,375",2,2,0,1,1
+F7C-S Hornet Ghost,Anvil Aerospace,Stealth Fighter,small,73724,0,Flight ready,125,"1,654,100",,0.00,,"4,000",,192,"1,229","120,000",583,,,47.6,13.9,1,1,F7,,"12,500",13,2,"3,375",2,2,0,1,1
+F8A Lightning,Anvil Aerospace,Heavy fighter,small,158774,0,Active for Squadron 42,,,,,,,,212,"1,337",,,,,,,,1,F8,,,,,,3,1,1,1,0
+F8C Lightning,Anvil Aerospace,Heavy fighter,small,,,In concept,,,,,,,,,,,,,,,,1,1,F8,,,,,,,,,,
+Freelancer,Musashi Industrial and Starflight Concern,Medium Freight,medium,231696,66,Flight ready,110,"1,697,600","66,000",38.88,3.89,"23,800",,154,"1,005","360,000","2,500",,,41.4,21.3,1,4,Freelancer,true,"33,952",9,3,"4,950",0,2,2,2,0
+Freelancer DUR,Musashi Industrial and Starflight Concern,Expedition,medium,234718,36,Flight ready,135,"1,967,600","28,000",14.23,1.83,"12,800",,154,"1,005","1,045,000","5,000",,,40.9,21.0,1,4,Freelancer,false,,21,3,"5,400",0,2,2,2,0
+Freelancer MAX,Musashi Industrial and Starflight Concern,Heavy Freight,medium,360208,120,Flight ready,150,"2,181,500","122,000",55.92,5.50,"12,800",,154,"1,005","585,000","2,500",,,53.3,24.5,1,4,Freelancer,false,,23,3,"5,850",0,2,2,2,0
+Freelancer MIS,Musashi Industrial and Starflight Concern,Gunship,medium,236353,36,Flight ready,175,"2,537,800","28,000",11.03,1.42,"12,800",,154,"1,005","375,000","2,500",,,40.6,20.9,1,4,Freelancer,false,,25,4,"6,300",0,3,2,2,0
+Galaxy,Roberts Space Industries,"Multi-Role, Modular",large,,64,In concept,380,,,,,,,,,,,,,,,6,6,,,,,,,0,1,1,3,0
+Genesis Starliner,Crusader Industries,Passenger Transport,large,3120000,300,In concept,400,,,,,,,,,,,,,,,2,8,Genesis,false,,,,,,,,,
+Gladiator,Anvil Aerospace,Light Bomber,small,88408,0,Flight ready,165,"1,954,500",0,0.00,,"20,000",,151,983,"150,000",583,,,46.9,22.2,1,2,Gladiator,false,"16,500",15,2,"3,800",1,2,1,1,0
+Gladius,Aegis Dynamics,Light Fighter,small,51352,0,Flight ready,90,"1,169,900",250,0.21,,"5,000",,208,"1,236","135,000",583,,,102.1,30.4,1,1,Gladius,false,,5,1,"2,535",2,2,0,1,2
+Glaive,Vanduul Clans,Medium Fighter,medium,,,Flight ready,,,,,,"5,000",,,,"1,045,000",583,,,93.2,35.0,1,1,,false,,7,2,"3,800",,,,,
+Glaive (replica),Esperia,Medium Fighter,medium,76520,0,Flight ready,350,,0,,,,,181,"1,229",,,,,,,1,1,,,,15,2,"3,800",2,1,0,1,1
+Hammerhead,Aegis Dynamics,Heavy gunship,large,4617511,40,Flight ready,725,"12,459,900","40,000",3.21,0.32,"160,000",,105,"1,000","15,154,560","11,000",,,53.7,16.4,3,9,,false,,45,15,"22,500",0,1,1,3,0
+Harvester Carrier,Vanduul Clans,Carrier,,,,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Hawk,Anvil Aerospace,Light Fighter,small,67066,0,Flight ready,100,"1,284,400",0,0.00,,"3,000",,225,"1,315","105,000",583,,,97.1,33.2,1,1,,false,,4,1,"2,365",2,0,0,1,1
+Herald,Drake Interplanetary,Medium Data,small,65705,0,Flight ready,85,"1,181,100",650,0.55,,"4,280",,174,"1,361","105,000",583,,,97.0,44.0,1,1,,,"8,500",2,0,"1,015",2,1,0,1,0
+HoverQuad,Consolidated Outland,Personal Transport,snub,"1,249",0,Flight ready,30,"88,000",0,0.00,,750,,125,600,"16,000",0,,,48.8,33.6,1,1,,false,,0,0,55,1,0,0,,0
+Hull A,Musashi Industrial and Starflight Concern,Cargo,small,122650,64,Flight ready,90,"1,375,500","48,000",34.90,4.65,"23,000",,108,"1,000","164,000","10,000",,,25.4,15.8,1,1,Hull,false,,1,,,0,0,1,1,2
+Hull B,Musashi Industrial and Starflight Concern,Heavy Freight,medium,387500,384,In concept,140,,,,,,,,,,,,,,,1,1,Hull,,,,,,,,,,
+Hull C,Musashi Industrial and Starflight Concern,Heavy Freight,large,886930,4608,In production,350,,,,,,,,,,,,,,,2,4,Hull,false,,,,,,,,,
+Hull D,Musashi Industrial and Starflight Concern,Cargo,capital,1216000,20736,In concept,450,,,,,,,,,,,,,,,1,5,Hull,false,,,,,,,,,
+Hull E,Musashi Industrial and Starflight Concern,Heavy freight,capital,1652000,98304,In concept,750,,,,,,,,,,,,,,,1,5,Hull,false,,,,,,,,,
+Hunter,Vanduul Clans,Corvette,large,90028,,Active for Squadron 42,,,,,,,,90,900,,,,,,,,,,,,,,,1,0,3,4,0
+Hurricane,Anvil Aerospace,Heavy Fighter,small,90245,0,Flight ready,195,"1,218,300",0,0.00,,"15,000",,198,"1,232","135,000",583,,,73.1,30.7,1,2,,false,,7,2,"3,800",1,1,1,1,0
+Idris-K,Aegis Dynamics,Frigate,capital,,995,In concept,1800,,,,,,,,,,,,,,,8,28,Idris,,,,,,1,1,2,4,0
+Idris-M,Aegis Dynamics,Frigate,capital,37459548,831,Active for Squadron 42,1000,,,,,,,,,,,,,,,8,28,Idris,,,,,,1,1,3,4,0
+Idris-P,Aegis Dynamics,Frigate,capital,37854373,995,In production,1500,,,,,,,45,"1,462",,,,,,,8,28,Idris,,,,,,1,0,2,4,0
+Javelin,Aegis Dynamics,Destroyer,capital,109860179,5400,Active for Squadron 42,3000,,,,,"5,000,000",,,,"959,850,000","4,000,000",,,22.8,7.0,12,80,,,,,,,0,1,3,4,0
+Khartu-al,Aopoa,Light Fighter,medium,72711,0,Flight ready,170,"2,113,900",0,0.00,,"2,240",,224,"1,323","1,045,000",583,,,84.8,0.0,1,1,Khartu,false,"17,000",5,1,"2,535",1,0,0,1,0
+Kingship,Vanduul Clans,Carrier,capital,280001,,Active for Squadron 42,,,,,,,,50,900,,,,,,,,1,,,,,,,1,0,5,4,0
+Kraken,Drake Interplanetary,Support,capital,,3792,In concept,1650,,,,,,,,,,,,,,,,10,Kraken,,,,,,,,,,
+Kraken Privateer,Drake Interplanetary,Multi-Role - Light Carrier,capital,,768,In concept,2000,,,,,,,,,,,,,,,1,10,Kraken,false,,,,,,,,,
+Legionnaire,Anvil Aerospace,Boarding,small,,,In concept,120,,,,,,,,,,,,,,,1,2,,,,,,,1,0,1,1,1
+Liberator,Anvil Aerospace,Light Transporter,large,,400,In concept,575,,,,,,,115,,,,,,,,1,2,,false,,,,,0,1,2,3,1
+M2 Hercules Starlifter,Crusader Industries,Military Transport,large,3139240,522,Flight ready,520,"5,225,300","468,000",89.56,9.99,"58,500",,135,963,"13,155,000","88,000",,,53.1,5.6,1,3,Hercules,no,,25,,,1,0,1,3,2
+M50,Origin Jumpworks,Racing/Interdiction,snub,10552,0,Flight ready,100,"1,193,800",0,0.00,,,,246,"1,343",,,,,,,1,1,M50,true,"10,000",6,2,"3,040",1,1,0,1,0
+MOLE,Argo Astronautics,Mining,medium,1169686,96,Flight ready,315,"5,130,500","96,000",18.71,1.87,,,128,"1,090",,,,,,,2,4,,no,,16,2,"4,050",1,0,0,2,1
+MPUV Cargo,Argo Astronautics,Light Freight,snub,13030,2,Flight ready,35,"224,200","2,000",8.92,0.89,,,112,899,,,,,,,1,1,MPUV,,"3,500",00,0,205,,,,,
+MPUV Personnel,Argo Astronautics,Passenger,snub,13005,0,Flight ready,40,"233,000",0,0.00,,,,115,919,,,,,,,1,1,MPUV,,"4,000",00,0,205,,,,,
+MPUV-1S,Argo Astronautics,Search and rescue,snub,,,In lore,,,,,,,,,,,,,,,,,,MPUV,,,00,0,205,,,,,
+Mantis,Roberts Space Industries,Interdiction,small,228123,0,Flight ready,150,"1,230,000",650,0.53,,"2,700",,168,"1,220","632,250",583,,,98.2,37.1,1,1,,,,14,4,"6,750",1,1,0,1,1
+Merchantman,Banu Souli,Heavy Freight,capital,9635000,2880,In production,650,,,,,,,,,,,,,,,4,8,,false,,,,,,,,,
+Mercury Star Runner,Crusader Industries,Medium Cargo/Data,large,1615175,114,Flight ready,260,"4,912,500","114,000",23.21,2.32,"12,000",,215,"1,287","4,850,840","9,740",,,62.9,31.4,2,3,Mercury,false,,14,4,"7,200",1,2,1,2,0
+Mustang Alpha,Consolidated Outland,Light Freight,small,34221,4,Flight ready,30,"251,400","6,000",23.87,1.59,"3,700",,191,"1,160","60,000",583,,,113.9,42.6,1,1,Mustang,true,"3,000",0,0,340,1,0,1,1,0
+Mustang Beta,Consolidated Outland,Pathfinder,small,41113,0,Flight ready,40,"404,000",650,1.61,,"3,700",,188,"1,216","1,045,000",700,,,94.8,35.5,1,1,Mustang,,"4,000",2,0,340,1,0,1,1,0
+Mustang Delta,Consolidated Outland,Light Fighter,small,38763,0,Flight ready,65,"763,600",0,0.00,,"3,700",,184,"1,225","75,000",583,,,100.6,37.6,1,1,Mustang,false,"6,500",2,0,425,1,1,1,1,0
+Mustang Gamma,Consolidated Outland,Racing,small,31565,0,Flight ready,55,"627,500",0,0.00,,"3,700",,241,"1,341","60,000",583,,,138.2,46.2,1,1,Mustang,true,"5,500",2,0,340,1,0,0,1,1
+Mustang Omega,Consolidated Outland,Racing,small,31565,0,Flight ready,,,0,,,"3,700",,241,"1,341","60,000",583,,,138.2,46.2,1,1,Mustang,false,,2,0,340,1,0,0,1,1
+Nautilus,Aegis Dynamics,Minelayer,large,13526320,64,In concept,725,,,,,,,,,,,,,,,4,8,,,,,,,0,0,3,3,0
+Nomad,Consolidated Outland,Light freight,small,228123,24,Flight ready,80,"952,800","24,000",25.19,2.52,"4,000",,180,"1,171","328,000",771,,,80.6,32.9,1,1,,false,,0,0,340,1,1,0,1,0
+OUC,Argo Astronautics,Support and industrial,,,,In Lore,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Odyssey,Musashi Industrial and Starflight Concern,Expedition,capital,,252,In concept,700,,,,,,,,,,,,,,,4,6,,,,,,,,,,,
+Orion,Roberts Space Industries,Heavy Mining,capital,26496000,384,In concept,575,,,,,,,,,,,,,,,4,7,,,,,,,,,,,
+Osprey,Anvil Aerospace,,,,,In lore,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+P-52 Merlin,Kruger Intergalactic,Snub Fighter,snub,8479,0,Flight ready,25,"135,500",0,0.00,,,,202,"1,028",,,,,,,1,1,P,false,"2,000",0,0,170,2,0,0,,0
+P-72 Archimedes,Kruger Intergalactic,Racing,snub,8479,0,Flight ready,35,"150,000",0,0.00,,,,248,"1,340",,,,,,,1,1,P,,,0,0,255,1,0,0,,0
+Pegasus,Roberts Space Industries,Escort Carrier,capital,,,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Perseus,Roberts Space Industries,Gunship,large,,50,In concept,675,,,,,,,92,,,,,,,,1,6,,false,,,,,0,2,2,3,0
+Pioneer,Consolidated Outland,Heavy Construction,capital,35600000,600,In concept,850,,,,,,,85,,,,,,,,4,8,,,,,,,,,,,
+Polaris,Roberts Space Industries,Corvette,capital,17155000,216,In concept,750,,,,,,,,,,,,,,,,24,,,,,,,,,,,
+Prospector,Musashi Industrial and Starflight Concern,Prospecting and mining,small,137396,0,Flight ready,155,"2,061,000",650,0.32,,"16,000",,150,"1,155","210,000",583,,,36.4,29.6,1,1,,true,,09,2,"3,040",1,0,0,1,1
+Prowler,Esperia,Dropship,medium,171700,0,Flight ready,440,"4,248,200","1,500",0.35,,"5,250",,178,"1,116","390,000","2,500",,,55.2,26.5,1,2,,,,13,4,"6,330",1,0,1,2,0
+Qhire Khartu,Aopoa,Light Fighter,small,,0,Unknown,,,,,,,,,,,,,,,,,1,Khartu,,,,,,,,,,
+RAFT,Argo Astronautics,Cargo,medium,1169686,96,Flight ready,125,"1,853,000","96,000",51.81,5.18,,,135,840,,,,,,,1,2,,false,,14,2,"2,050",1,0,1,2,2
+Railen,Gatac Manufacture,Cargo,large,,320,In concept,225,,,,,,,,,,,,,,,1,4,,,,,,,0,2,1,2,1
+Razor,Musashi Industrial and Starflight Concern,Racing,snub,11701,0,Flight ready,145,"1,761,200",0,0.00,,"3,600",,252,"1,345","30,000",583,,,132.4,57.7,1,1,Razor,true,,6,2,"3,040",1,1,0,1,0
+Razor EX,Musashi Industrial and Starflight Concern,Stealth,snub,11700,0,Flight ready,155,"1,878,800",0,0.00,,"3,600",,252,"1,345","30,000",583,,,132.4,57.7,1,1,Razor,false,,12,2,"3,040",1,1,0,1,0
+Razor LX,Musashi Industrial and Starflight Concern,Racing,snub,11701,0,Flight ready,150,"1,823,800",0,0.00,,"1,600",,275,"1,400","30,000",583,,,139.4,57.7,1,1,Razor,false,,12,2,"3,040",1,0,0,1,0
+Reclaimer,Aegis Dynamics,Heavy Salvage,capital,9757854,180,Flight ready,400,"15,126,400","180,000",11.90,1.19,"64,000",,76,932,"17,540,000","11,000",,,15.1,10.1,4,5,,,,27,9,"13,500",0,0,2,3,2
+Redeemer,Aegis Dynamics,Gunship,large,444270,2,Flight ready,325,"8,675,500","2,000",0.23,0.02,"45,000",,140,960,"660,000","5,700",,,39.3,16.1,3,4,,false,,32,7,"10,970",1,1,2,2,2
+Reliant Kore,Musashi Industrial and Starflight Concern,Light Freight,medium,39353,6,Flight ready,65,"744,700","6,000",8.06,0.81,"6,000",,166,"1,150","105,000",583,,,31.8,0.0,1,2,Reliant,,"6,500",0,0,340,1,1,1,1,0
+Reliant Mako,Musashi Industrial and Starflight Concern,Reporting,medium,39353,0,Flight ready,95,"780,000",250,0.32,,"6,000",,166,"1,150","105,000",583,,,31.8,0.0,1,2,Reliant,,,2,0,340,1,1,0,1,2
+Reliant Sen,Musashi Industrial and Starflight Concern,Light Science,medium,39353,2,Flight ready,85,"840,000",250,0.30,0.24,"6,000",,166,"1,150","105,000",583,,,31.8,0.0,1,2,Reliant,,,2,0,340,1,1,0,1,2
+Reliant Tana,Musashi Industrial and Starflight Concern,Light Fighter,medium,39168,1,Flight ready,75,"870,000",250,0.29,0.11,"5,400",,166,"1,150","75,000",583,,,31.9,0.0,1,2,Reliant,,,2,0,425,2,2,0,1,0
+Retaliator Base,Aegis Dynamics,Heavy Bomber,,300392,0,In concept,150,,"8,000",,,,,185,815,,,,,,,4,7,,,,,,,,,,,
+Retaliator Bomber,Aegis Dynamics,Heavy Bomber,large,343270,0,Flight ready,275,,,,,,,,,,,,,,,,,,,,,,,0,2,2,2,0
+Retribution,UEE Navy,Flagship,capital,,,Inactive,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+SRV,Argo Astronautics,Tugging,small,231680,10,In production,150,,,,,,,200,,,,,,,,,1,,false,,,,,0,0,0,2,0
+Sabre,Aegis Dynamics,Stealth Fighter,small,86593,0,Flight ready,170,"2,183,300",0,0.00,,"8,000",,206,"1,235","135,000",583,,,78.7,18.0,1,1,Sabre,false,"17,000",6,2,"3,375",1,1,0,1,0
+Sabre Raven,Aegis Dynamics,Interdiction,small,70811,0,Flight ready,,,250,,,"4,800",,205,"1,235","120,000",583,,,48.7,9.5,1,1,Sabre,false,,15,2,"3,800",1,0,0,1,1
+San'tok.yāi,Aopoa,Medium Fighter,small,106566,,In production,220,,,,,,,265,,,,,,,,,1,,,,,,,1,1,0,1,0
+Scorpius,Roberts Space Industries,Heavy Fighter,small,97562,0,Flight ready,240,"2,879,700","3,000",1.04,,"13,000",,218,"1,250","135,000",583,,,90.8,45.4,1,2,Scorpius,false,,10,3,"5,063",1,1,1,1,0
+Scorpius Antares,Roberts Space Industries,Heavy Fighter / Interdiction,small,97562,0,Flight Ready,230,,"3,000",,,,,238,"1,303",,,,,,,1,2,Scorpius,,,,,,1,1,0,1,2
+Scythe,Vanduul Clans,Medium Fighter,small,72091,0,Flight ready,300,,,,,"4,000",,195,"1,231","1,045,000",583,,,98.9,37.5,,1,,,,11,1,"2,955",,,,,
+Scythe (replica),Esperia,Medium Fighter,medium,59573,0,Flight ready,,,,,,,,,675,,,,,,,,1,,,,11,1,"2,955",3,1,0,1,1
+Starfarer,Musashi Industrial and Starflight Concern,Heavy Refueling,large,3555606,291,Flight ready,300,"6,651,500","295,000",44.35,4.37,"45,000",,85,888,"6,522,000","11,000",,,26.6,10.4,1,7,Starfarer,,,18,6,"9,000",0,0,3,3,0
+Starfarer Gemini,Musashi Industrial and Starflight Concern,Heavy Refueling,large,3583690,291,Flight ready,340,"6,191,500","295,000",47.65,4.70,"45,000",,88,889,"6,522,000","11,000",,,19.2,4.9,1,6,Starfarer,,,23,7,"11,250",0,1,3,3,0
+Stiletto,Unknown manufacturer,Interceptor,medium,,,In lore,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Stinger,Vanduul Clans,Heavy Fighter,medium,19847,,Active for Squadron 42,,,,,,,,135,900,,,,,,,1,3,,,,,,,2,1,1,2,0
+T8A Gladiator,Anvil Aerospace,Light Bomber,small,,,Unknown,,,,,,,,,,,,,,,,,2,,,,,,,,,,,
+Talon,Esperia,Light Fighter,snub,51352,0,Flight ready,115,"1,854,500",0,0.00,,"2,700",,208,"1,236","80,000",583,,,142.3,56.1,1,1,Talon,false,,6,2,"3,375",1,1,0,1,2
+Talon Shrike,Esperia,Light Fighter,snub,51352,0,Flight ready,115,"2,259,200",0,0.00,,"2,700",,208,"1,236","80,000",583,,,142.3,56.1,1,1,Talon,false,,9,"4,645",3,1,1,0,1,2
+Terrapin,Anvil Aerospace,Scout,small,166850,0,Flight ready,220,,,,,"45,000",,,,"1,045,000",950,,,42.1,25.0,,,,,,,,,,,,,
+Valkyrie,Anvil Aerospace,Heavy Dropship,large,621046,30,Flight ready,375,,,,,"20,000",,,,"945,000","2,500",,,45.7,17.5,,,,,,,,,,,,,
+Vanguard Harbinger,Aegis Dynamics,Bomber,medium,336604,0,Flight ready,290,,,,,"19,600",,,,"390,000","2,500",,,52.1,20.9,,,,,,,,,,,,,
+Vanguard Hoplite,Aegis Dynamics,Dropship,medium,234870,0,Flight ready,235,,,,,"14,000",,,,"390,000","2,500",,,74.7,29.9,,,,,,,,,,,,,
+Vanguard Sentinel,Aegis Dynamics,Electronic Warfare,medium,170685,0,Flight ready,275,,,,,"12,960",,,,"390,000","2,500",,,102.8,41.2,,,,,,,,,,,,,
+Vanguard Warden,Aegis Dynamics,Heavy Fighter,medium,244270,0,Flight ready,260,,,,,"19,600",,,,"405,000","2,500",,,71.8,28.8,,,,,,,,,,,,,
+Void,Vanduul Clans,Heavy Bomber,large,106460,,Active for Squadron 42,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Volper,Aopoa,Light Bomber,,,,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Vulcan,Aegis Dynamics,Medium Repair/Refuel,medium,623330,12,In concept,200,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Vulture,Drake Interplanetary,Salvage,small,114591,12,Flight ready,175,,,,,"1,500",,,,"360,000",583,,,38.7,33.6,,,,,,,,,,,,,
+X1,Origin Jumpworks,Touring,snub,1610,0,In concept,40,,,,,,,,,,,,,,,,,,,,,,,,,,,
+X1 Force,Origin Jumpworks,Pathfinder,snub,1682,0,In concept,50,,,,,,,,,,,,,,,,,,,,,,,,,,,
+X1 Velocity,Origin Jumpworks,Racing,snub,1528,0,In concept,45,,,,,,,,,,,,,,,,,,,,,,,,,,,

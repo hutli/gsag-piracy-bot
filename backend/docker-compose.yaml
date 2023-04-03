@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  scap-backend:
+    build: .
+    image: scap-backend
+    stdin_open: true
+    tty: true
+    ports:
+      - 5142:80
+    restart: "unless-stopped"

@@ -1,0 +1,8 @@
+discord
+fastapi
+httpx
+loguru
+mypy
+python-dotenv
+sentence-transformers
+uvicorn

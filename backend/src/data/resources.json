@@ -1,0 +1,50 @@
+[
+    {
+        "name": "Recycled Material Composite",
+        "value": 6307,
+        "sell": [
+            "Stanton > Crusader > Yela > Grim HEX"
+        ]
+    },
+    {
+        "name": "Titanium",
+        "value": 890,
+        "sell": [
+            "Stanton > Crusader > Daymar > Brio's Breaker Yard",
+            "Stanton > Hurston > Reclamation & Disposal Orinth",
+            "Stanton > microTech > Euterpe > Devlin Scrap & Salvage"
+        ]
+    },
+    {
+        "name": "Quantainium",
+        "value": 6000,
+        "sell": [
+            "Stanton > Crusader > Yela > Grim HEX"
+        ]
+    },
+    {
+        "name": "SLAM",
+        "value": 16875,
+        "sell": [
+            "Stanton > Crusader > Daymar > Brio's Breaker Yard",
+            "Stanton > Hurston > Reclamation & Disposal Orinth",
+            "Stanton > ArcCorp > Wala > Samson & Son's Salvage Center",
+            "Stanton > microTech > Euterpe > Devlin Scrap & Salvage"
+        ]
+    },
+    {
+        "name": "Laranite",
+        "value": 3101,
+        "sell": [
+            "Stanton > ArcCorp > Lyria > The Orphanage"
+        ]
+    },
+    {
+       "name": "E'tam",
+       "value": 11500,
+       "sell": [
+         "Stanton > Hurston > Reclamation & Disposal Orinth",
+         "Stanton > Crusader > Yela > Grim HEX > Admin" 
+       ]
+    }
+]
