@@ -11,7 +11,7 @@ body {
   width: 100%;
   border: none;
   height: 30px;
-  background-color: lightblue;
+  background-color: inherit;
   color: black;
 }
 
@@ -24,6 +24,12 @@ body {
 }
 .autocomplete-input-container > * {
   margin: 2px;
+}
+.disabled {
+  background-color: gray;
+}
+.disabled .result-box {
+  background-color: lightgray;
 }
 .results-container {
   display: flex;
@@ -46,4 +52,22 @@ body {
   font-size: large;
   padding: 10px;
   margin: 10px;
+  cursor: pointer;
+}
+#submit:disabled {
+  background-color: gray;
+  cursor: not-allowed;
+}
+
+#github {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 5px;
+  width: 30px;
+  height: 30px;
+}
+#github img {
+  width: 30px;
+  height: 30px;
 }
