@@ -1,23 +1,59 @@
 [
-    {
-        "name": "ARC-L1 - ArcCorp"
-    },
-    {
-        "name": "Arial - Hurston"
-    },
-    {
-        "name": "Brio's Breaker Yard"
-    },
-    {
-        "name": "The Orphanage"
-    },
-    {
-        "name": "Samson & Son's Salvage Center"
-    },
-    {
-        "name": "Test location"
-    },
-    {
-        "name": "HDMS-Lathan"
-    }
+  {
+    "name": "Admin (Stanton > Crusader > Yela > Grim HEX)"
+  },
+  {
+    "name": "Brio's Breaker Yard (Stanton > Crusader > Daymar)"
+  },
+  {
+    "name": "Devlin Scrap & Salvage (Stanton > microTech > Euterpe)"
+  },
+  {
+    "name": "HDMS-Bezdek (Stanton > Hurston > Arial)"
+  },
+  {
+    "name": "HDMS-Lathan (Stanton > Hurston > Arial)"
+  },
+  {
+    "name": "Interdiction: ARC-L1 - ArcCorp"
+  },
+  {
+    "name": "Interdiction: Arial - Hurston"
+  },
+  {
+    "name": "Jumptown (Stanton > Crusader > Yela)"
+  },
+  {
+    "name": "NT-999-XX (Stanton > Crusader > Yela)"
+  },
+  {
+    "name": "Nuen Waste Management (Stanton > Crusader > Daymar)"
+  },
+  {
+    "name": "Outpost 54 (Stanton > microTech)"
+  },
+  {
+    "name": "PRIVATE PROPERTY (Stanton > Crusader > Cellin)"
+  },
+  {
+    "name": "Paradise Cove (Stanton > ArcCorp > Lyria)"
+  },
+  {
+    "name": "Raven's Roost (Stanton > microTech > Calliope)"
+  },
+  {
+    "name": "Reclamation & Disposal Orinth (Stanton > Hurston)"
+  },
+  {
+    "name": "Samson & Son's Salvage Center (Stanton > ArcCorp > Wala)"
+  },
+  {
+    "name": "Test location"
+  },
+  {
+    "name": "The Necropolis (Stanton > microTech)"
+  },
+  {
+    "name": "The Orphanage (Stanton > ArcCorp > Lyria)"
+  }
 ]
