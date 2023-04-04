@@ -1,50 +1,768 @@
 [
     {
-        "name": "Recycled Material Composite",
-        "value": 6307,
+        "name": "Revenant Pod",
         "sell": [
-            "Stanton > Crusader > Yela > Grim HEX"
-        ]
-    },
-    {
-        "name": "Titanium",
-        "value": 890,
-        "sell": [
-            "Stanton > Crusader > Daymar > Brio's Breaker Yard",
-            "Stanton > Hurston > Reclamation & Disposal Orinth",
-            "Stanton > microTech > Euterpe > Devlin Scrap & Salvage"
+            {
+                "location": "Stanton > Crusader > Cellin > PRIVATE PROPERTY",
+                "price": 14850
+            },
+            {
+                "location": "Stanton > ArcCorp > Lyria > The Orphanage",
+                "price": 14850
+            },
+            {
+                "location": "Stanton > Crusader > Yela > Grim HEX > Admin",
+                "price": 13390
+            },
+            {
+                "location": "Stanton > ArcCorp > Wala > Samson & Son's Salvage Center",
+                "price": 9950
+            },
+            {
+                "location": "Stanton > Crusader > Daymar > Brio's Breaker Yard",
+                "price": 9950
+            }
         ]
     },
     {
         "name": "Quantainium",
-        "value": 6000,
         "sell": [
-            "Stanton > Crusader > Yela > Grim HEX"
+            {
+                "location": "Stanton > Crusader > Yela > Grim HEX > Admin",
+                "price": 6000
+            },
+            {
+                "location": "Stanton > ArcCorp > Lyria > The Orphanage",
+                "price": 4400
+            }
+        ]
+    },
+    {
+        "name": "Beryl",
+        "sell": [
+            {
+                "location": "Stanton > Hurston > Reclamation & Disposal Orinth",
+                "price": 435
+            }
+        ]
+    },
+    {
+        "name": "Fluorine",
+        "sell": [
+            {
+                "location": "Stanton > microTech > Euterpe > Devlin Scrap & Salvage",
+                "price": 296
+            },
+            {
+                "location": "Stanton > Crusader > Daymar > Brio's Breaker Yard",
+                "price": 296
+            },
+            {
+                "location": "Stanton > Crusader > Yela > Grim HEX > Admin",
+                "price": 296
+            }
+        ]
+    },
+    {
+        "name": "Iodine",
+        "sell": [
+            {
+                "location": "Stanton > Crusader > Yela > Grim HEX > Admin",
+                "price": 46
+            },
+            {
+                "location": "Stanton > Crusader > Cellin > PRIVATE PROPERTY",
+                "price": 46
+            }
+        ]
+    },
+    {
+        "name": "Dolivine",
+        "sell": [
+            {
+                "location": "Stanton > ArcCorp > Wala > Samson & Son's Salvage Center",
+                "price": 130000
+            },
+            {
+                "location": "Stanton > Crusader > Yela > Grim HEX > Admin",
+                "price": 130000
+            }
+        ]
+    },
+    {
+        "name": "Tungsten",
+        "sell": [
+            {
+                "location": "Stanton > ArcCorp > Wala > Samson & Son's Salvage Center",
+                "price": 405
+            }
+        ]
+    },
+    {
+        "name": "Gold",
+        "sell": [
+            {
+                "location": "Stanton > Crusader > Yela > Grim HEX > Admin",
+                "price": 513
+            },
+            {
+                "location": "Stanton > ArcCorp > Wala > Samson & Son's Salvage Center",
+                "price": 481
+            },
+            {
+                "location": "Stanton > Crusader > Cellin > PRIVATE PROPERTY",
+                "price": 438
+            }
+        ]
+    },
+    {
+        "name": "Stims",
+        "sell": [
+            {
+                "location": "Stanton > Crusader > Cellin > PRIVATE PROPERTY",
+                "price": 381
+            },
+            {
+                "location": "Stanton > ArcCorp > Lyria > The Orphanage",
+                "price": 381
+            },
+            {
+                "location": "Stanton > Crusader > Yela > Grim HEX > Admin",
+                "price": 381
+            },
+            {
+                "location": "Stanton > Crusader > Yela > Jumptown",
+                "price": 381
+            }
+        ]
+    },
+    {
+        "name": "Copper",
+        "sell": [
+            {
+                "location": "Stanton > Crusader > Yela > Grim HEX > Admin",
+                "price": 510
+            },
+            {
+                "location": "Stanton > ArcCorp > Lyria > The Orphanage",
+                "price": 446
+            },
+            {
+                "location": "Stanton > Crusader > Cellin > PRIVATE PROPERTY",
+                "price": 446
+            },
+            {
+                "location": "Stanton > Hurston > Reclamation & Disposal Orinth",
+                "price": 383
+            },
+            {
+                "location": "Stanton > Crusader > Daymar > Brio's Breaker Yard",
+                "price": 383
+            }
+        ]
+    },
+    {
+        "name": "Agricium",
+        "sell": [
+            {
+                "location": "Stanton > ArcCorp > Wala > Samson & Son's Salvage Center",
+                "price": 2750
+            },
+            {
+                "location": "Stanton > microTech > Euterpe > Devlin Scrap & Salvage",
+                "price": 2750
+            },
+            {
+                "location": "Stanton > Crusader > Daymar > Brio's Breaker Yard",
+                "price": 2750
+            }
+        ]
+    },
+    {
+        "name": "Sunset Berries",
+        "sell": [
+            {
+                "location": "Stanton > Crusader > Yela > Grim HEX > Admin",
+                "price": 14950
+            },
+            {
+                "location": "Stanton > Crusader > Daymar > Brio's Breaker Yard",
+                "price": 14950
+            }
+        ]
+    },
+    {
+        "name": "WiDoW",
+        "sell": [
+            {
+                "location": "Stanton > Crusader > Yela > Grim HEX > Admin",
+                "price": 14100
+            },
+            {
+                "location": "Stanton > Crusader > Daymar > Brio's Breaker Yard",
+                "price": 13613
+            },
+            {
+                "location": "Stanton > ArcCorp > Wala > Samson & Son's Salvage Center",
+                "price": 13613
+            },
+            {
+                "location": "Stanton > microTech > Euterpe > Devlin Scrap & Salvage",
+                "price": 13613
+            },
+            {
+                "location": "Stanton > Hurston > Reclamation & Disposal Orinth",
+                "price": 13613
+            }
+        ]
+    },
+    {
+        "name": "Chlorine",
+        "sell": [
+            {
+                "location": "Stanton > ArcCorp > Wala > Samson & Son's Salvage Center",
+                "price": 170
+            },
+            {
+                "location": "Stanton > Crusader > Yela > Grim HEX > Admin",
+                "price": 170
+            },
+            {
+                "location": "Stanton > Crusader > Yela > Jumptown",
+                "price": 170
+            }
+        ]
+    },
+    {
+        "name": "Astatine",
+        "sell": [
+            {
+                "location": "Stanton > microTech > Euterpe > Devlin Scrap & Salvage",
+                "price": 900
+            },
+            {
+                "location": "Stanton > Crusader > Daymar > Brio's Breaker Yard",
+                "price": 900
+            },
+            {
+                "location": "Stanton > ArcCorp > Wala > Samson & Son's Salvage Center",
+                "price": 900
+            },
+            {
+                "location": "Stanton > Crusader > Yela > Grim HEX > Admin",
+                "price": 900
+            }
+        ]
+    },
+    {
+        "name": "Maze",
+        "sell": [
+            {
+                "location": "Stanton > Hurston > Reclamation & Disposal Orinth",
+                "price": 90000
+            },
+            {
+                "location": "Stanton > Crusader > Daymar > Brio's Breaker Yard",
+                "price": 90000
+            },
+            {
+                "location": "Stanton > ArcCorp > Wala > Samson & Son's Salvage Center",
+                "price": 90000
+            },
+            {
+                "location": "Stanton > microTech > Euterpe > Devlin Scrap & Salvage",
+                "price": 90000
+            },
+            {
+                "location": "Stanton > Crusader > Yela > Grim HEX > Admin",
+                "price": 90000
+            }
+        ]
+    },
+    {
+        "name": "Scrap",
+        "sell": [
+            {
+                "location": "Stanton > ArcCorp > Wala > Samson & Son's Salvage Center",
+                "price": 186
+            },
+            {
+                "location": "Stanton > microTech > Euterpe > Devlin Scrap & Salvage",
+                "price": 186
+            },
+            {
+                "location": "Stanton > Hurston > Reclamation & Disposal Orinth",
+                "price": 186
+            },
+            {
+                "location": "Stanton > Crusader > Daymar > Brio's Breaker Yard",
+                "price": 186
+            }
+        ]
+    },
+    {
+        "name": "Hephaestanite",
+        "sell": [
+            {
+                "location": "Stanton > Crusader > Cellin > PRIVATE PROPERTY",
+                "price": 1400
+            },
+            {
+                "location": "Stanton > Crusader > Yela > Grim HEX > Admin",
+                "price": 1347
+            },
+            {
+                "location": "Stanton > ArcCorp > Wala > Samson & Son's Salvage Center",
+                "price": 1030
+            }
+        ]
+    },
+    {
+        "name": "Aphorite",
+        "sell": [
+            {
+                "location": "Stanton > microTech > Euterpe > Devlin Scrap & Salvage",
+                "price": 152510
+            },
+            {
+                "location": "Stanton > Crusader > Yela > Grim HEX > Admin",
+                "price": 152510
+            }
+        ]
+    },
+    {
+        "name": "Year of the Rooster Envelope",
+        "sell": [
+            {
+                "location": "Stanton > Crusader > Yela > Grim HEX > Admin",
+                "price": 500000
+            }
+        ]
+    },
+    {
+        "name": "Recycled Material Composite",
+        "sell": [
+            {
+                "location": "Stanton > Crusader > Yela > Grim HEX > Admin",
+                "price": 6307
+            },
+            {
+                "location": "Stanton > Hurston > Reclamation & Disposal Orinth",
+                "price": 5915
+            },
+            {
+                "location": "Stanton > Crusader > Daymar > Brio's Breaker Yard",
+                "price": 5460
+            },
+            {
+                "location": "Stanton > ArcCorp > Wala > Samson & Son's Salvage Center",
+                "price": 5005
+            },
+            {
+                "location": "Stanton > microTech > Euterpe > Devlin Scrap & Salvage",
+                "price": 4778
+            }
+        ]
+    },
+    {
+        "name": "Quartz",
+        "sell": [
+            {
+                "location": "Stanton > Hurston > Reclamation & Disposal Orinth",
+                "price": 156
+            }
+        ]
+    },
+    {
+        "name": "Compboard",
+        "sell": [
+            {
+                "location": "Stanton > Crusader > Yela > Grim HEX > Admin",
+                "price": 37485
+            }
+        ]
+    },
+    {
+        "name": "Diamond",
+        "sell": [
+            {
+                "location": "Stanton > Hurston > Reclamation & Disposal Orinth",
+                "price": 736
+            },
+            {
+                "location": "Stanton > Crusader > Cellin > PRIVATE PROPERTY",
+                "price": 736
+            }
+        ]
+    },
+    {
+        "name": "Altruciatoxin",
+        "sell": [
+            {
+                "location": "Stanton > Crusader > Yela > Grim HEX > Admin",
+                "price": 5750
+            },
+            {
+                "location": "Stanton > Crusader > Daymar > Brio's Breaker Yard",
+                "price": 5625
+            },
+            {
+                "location": "Stanton > ArcCorp > Wala > Samson & Son's Salvage Center",
+                "price": 5625
+            },
+            {
+                "location": "Stanton > microTech > Euterpe > Devlin Scrap & Salvage",
+                "price": 5625
+            },
+            {
+                "location": "Stanton > Hurston > Reclamation & Disposal Orinth",
+                "price": 5625
+            }
+        ]
+    },
+    {
+        "name": "Hadanite",
+        "sell": [
+            {
+                "location": "Stanton > Crusader > Yela > Grim HEX > Admin",
+                "price": 275000
+            },
+            {
+                "location": "Stanton > Crusader > Daymar > Brio's Breaker Yard",
+                "price": 275000
+            }
         ]
     },
     {
         "name": "SLAM",
-        "value": 16875,
         "sell": [
-            "Stanton > Crusader > Daymar > Brio's Breaker Yard",
-            "Stanton > Hurston > Reclamation & Disposal Orinth",
-            "Stanton > ArcCorp > Wala > Samson & Son's Salvage Center",
-            "Stanton > microTech > Euterpe > Devlin Scrap & Salvage"
+            {
+                "location": "Stanton > Crusader > Daymar > Brio's Breaker Yard",
+                "price": 16875
+            },
+            {
+                "location": "Stanton > ArcCorp > Wala > Samson & Son's Salvage Center",
+                "price": 16875
+            },
+            {
+                "location": "Stanton > microTech > Euterpe > Devlin Scrap & Salvage",
+                "price": 16875
+            },
+            {
+                "location": "Stanton > Hurston > Reclamation & Disposal Orinth",
+                "price": 16875
+            }
+        ]
+    },
+    {
+        "name": "Taranite",
+        "sell": [
+            {
+                "location": "Stanton > ArcCorp > Lyria > The Orphanage",
+                "price": 3111
+            },
+            {
+                "location": "Stanton > Crusader > Yela > Grim HEX > Admin",
+                "price": 2868
+            },
+            {
+                "location": "Stanton > ArcCorp > Wala > Samson & Son's Salvage Center",
+                "price": 2330
+            }
+        ]
+    },
+    {
+        "name": "Agricultural Supplies",
+        "sell": [
+            {
+                "location": "Stanton > Crusader > Yela > Grim HEX > Admin",
+                "price": 121
+            },
+            {
+                "location": "Stanton > Crusader > Cellin > PRIVATE PROPERTY",
+                "price": 121
+            },
+            {
+                "location": "Stanton > ArcCorp > Lyria > The Orphanage",
+                "price": 121
+            },
+            {
+                "location": "Stanton > Crusader > Yela > Jumptown",
+                "price": 121
+            }
+        ]
+    },
+    {
+        "name": "Revenant Tree Pollen",
+        "sell": [
+            {
+                "location": "Stanton > microTech > Calliope > Raven's Roost",
+                "price": 169
+            },
+            {
+                "location": "Stanton > ArcCorp > Lyria > The Orphanage",
+                "price": 169
+            },
+            {
+                "location": "Stanton > ArcCorp > Lyria > Paradise Cove",
+                "price": 169
+            },
+            {
+                "location": "Stanton > ArcCorp > Wala > Samson & Son's Salvage Center",
+                "price": 169
+            },
+            {
+                "location": "Stanton > microTech > Euterpe > Devlin Scrap & Salvage",
+                "price": 169
+            },
+            {
+                "location": "Stanton > Hurston > Reclamation & Disposal Orinth",
+                "price": 169
+            },
+            {
+                "location": "Stanton > Crusader > Daymar > Brio's Breaker Yard",
+                "price": 169
+            },
+            {
+                "location": "Stanton > microTech > The Necropolis",
+                "price": 169
+            },
+            {
+                "location": "Stanton > Crusader > Yela > NT-999-XX",
+                "price": 169
+            },
+            {
+                "location": "Stanton > Crusader > Daymar > Nuen Waste Management",
+                "price": 169
+            },
+            {
+                "location": "Stanton > microTech > Outpost 54",
+                "price": 169
+            },
+            {
+                "location": "Stanton > Crusader > Cellin > PRIVATE PROPERTY",
+                "price": 169
+            }
+        ]
+    },
+    {
+        "name": "Distilled Spirits",
+        "sell": [
+            {
+                "location": "Stanton > ArcCorp > Lyria > The Orphanage",
+                "price": 556
+            },
+            {
+                "location": "Stanton > Crusader > Yela > Grim HEX > Admin",
+                "price": 556
+            },
+            {
+                "location": "Stanton > Crusader > Yela > Jumptown",
+                "price": 556
+            }
         ]
     },
     {
         "name": "Laranite",
-        "value": 3101,
         "sell": [
-            "Stanton > ArcCorp > Lyria > The Orphanage"
+            {
+                "location": "Stanton > ArcCorp > Lyria > The Orphanage",
+                "price": 3101
+            }
         ]
     },
     {
-       "name": "E'tam",
-       "value": 11500,
-       "sell": [
-         "Stanton > Hurston > Reclamation & Disposal Orinth",
-         "Stanton > Crusader > Yela > Grim HEX > Admin" 
-       ]
+        "name": "Aluminum",
+        "sell": [
+            {
+                "location": "Stanton > Crusader > Yela > Grim HEX > Admin",
+                "price": 118
+            }
+        ]
+    },
+    {
+        "name": "Corundum",
+        "sell": [
+            {
+                "location": "Stanton > Hurston > Reclamation & Disposal Orinth",
+                "price": 270
+            }
+        ]
+    },
+    {
+        "name": "Medical Supplies",
+        "sell": [
+            {
+                "location": "Stanton > Hurston > Reclamation & Disposal Orinth",
+                "price": 1925
+            },
+            {
+                "location": "Stanton > ArcCorp > Lyria > The Orphanage",
+                "price": 1925
+            },
+            {
+                "location": "Stanton > Crusader > Yela > Jumptown",
+                "price": 1925
+            }
+        ]
+    },
+    {
+        "name": "Bexalite",
+        "sell": [
+            {
+                "location": "Stanton > Crusader > Yela > Grim HEX > Admin",
+                "price": 3740
+            },
+            {
+                "location": "Stanton > Crusader > Daymar > Brio's Breaker Yard",
+                "price": 2700
+            },
+            {
+                "location": "Stanton > Crusader > Cellin > PRIVATE PROPERTY",
+                "price": 2250
+            }
+        ]
+    },
+    {
+        "name": "Neon",
+        "sell": [
+            {
+                "location": "Stanton > ArcCorp > Wala > Samson & Son's Salvage Center",
+                "price": 9000
+            },
+            {
+                "location": "Stanton > Crusader > Daymar > Brio's Breaker Yard",
+                "price": 9000
+            },
+            {
+                "location": "Stanton > microTech > Euterpe > Devlin Scrap & Salvage",
+                "price": 9000
+            },
+            {
+                "location": "Stanton > Hurston > Reclamation & Disposal Orinth",
+                "price": 9000
+            },
+            {
+                "location": "Stanton > Crusader > Yela > Grim HEX > Admin",
+                "price": 9000
+            },
+            {
+                "location": "Stanton > Crusader > Yela > Jumptown",
+                "price": 9000
+            }
+        ]
+    },
+    {
+        "name": "Titanium",
+        "sell": [
+            {
+                "location": "Stanton > microTech > Euterpe > Devlin Scrap & Salvage",
+                "price": 890
+            },
+            {
+                "location": "Stanton > Crusader > Daymar > Brio's Breaker Yard",
+                "price": 890
+            },
+            {
+                "location": "Stanton > Hurston > Reclamation & Disposal Orinth",
+                "price": 890
+            }
+        ]
+    },
+    {
+        "name": "E'tam",
+        "sell": [
+            {
+                "location": "Stanton > Hurston > Reclamation & Disposal Orinth",
+                "price": 11500
+            },
+            {
+                "location": "Stanton > Crusader > Yela > Grim HEX > Admin",
+                "price": 11500
+            },
+            {
+                "location": "Stanton > Crusader > Daymar > Brio's Breaker Yard",
+                "price": 11250
+            },
+            {
+                "location": "Stanton > ArcCorp > Wala > Samson & Son's Salvage Center",
+                "price": 11250
+            },
+            {
+                "location": "Stanton > microTech > Euterpe > Devlin Scrap & Salvage",
+                "price": 11250
+            }
+        ]
+    },
+    {
+        "name": "Hydrogen",
+        "sell": [
+            {
+                "location": "Stanton > microTech > Euterpe > Devlin Scrap & Salvage",
+                "price": 110
+            },
+            {
+                "location": "Stanton > Crusader > Daymar > Brio's Breaker Yard",
+                "price": 110
+            },
+            {
+                "location": "Stanton > Crusader > Yela > Grim HEX > Admin",
+                "price": 110
+            },
+            {
+                "location": "Stanton > ArcCorp > Lyria > The Orphanage",
+                "price": 110
+            },
+            {
+                "location": "Stanton > Crusader > Yela > Jumptown",
+                "price": 110
+            }
+        ]
+    },
+    {
+        "name": "Processed Food",
+        "sell": [
+            {
+                "location": "Stanton > Crusader > Yela > Grim HEX > Admin",
+                "price": 151
+            },
+            {
+                "location": "Stanton > Crusader > Yela > Jumptown",
+                "price": 151
+            },
+            {
+                "location": "Stanton > ArcCorp > Lyria > The Orphanage",
+                "price": 151
+            }
+        ]
+    },
+    {
+        "name": "Borase",
+        "sell": [
+            {
+                "location": "Stanton > Crusader > Yela > Grim HEX > Admin",
+                "price": 2816
+            },
+            {
+                "location": "Stanton > Crusader > Cellin > PRIVATE PROPERTY",
+                "price": 2592
+            },
+            {
+                "location": "Stanton > Hurston > Reclamation & Disposal Orinth",
+                "price": 2464
+            },
+            {
+                "location": "Stanton > ArcCorp > Wala > Samson & Son's Salvage Center",
+                "price": 2464
+            },
+            {
+                "location": "Stanton > Crusader > Daymar > Brio's Breaker Yard",
+                "price": 2464
+            },
+            {
+                "location": "Stanton > microTech > Euterpe > Devlin Scrap & Salvage",
+                "price": 2464
+            }
+        ]
     }
 ]

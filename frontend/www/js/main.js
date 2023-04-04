@@ -11,7 +11,13 @@ function createBox(obj, text, value) {
   return elem;
 }
 
-async function splitSearch(collection, event, obj, main_key, keys = ["Enter"]) {
+async function splitSearch(
+  collection,
+  event,
+  obj,
+  main_key,
+  keys = ["Enter", ","]
+) {
   if (!keys || keys.includes(event.key)) {
     let value = obj.value.trim();
     obj.value = "";
@@ -49,13 +55,13 @@ async function splitSearch(collection, event, obj, main_key, keys = ["Enter"]) {
   }
 }
 
-async function search(collection, event, obj, main_key, keys = ["Enter"]) {
+async function search(collection, event, obj, main_key, keys = ["Enter", ","]) {
   if (!keys || keys.includes(event.key)) {
     let value = obj.value.trim();
     obj.value = "";
 
     if (value) {
-      if (collection) {
+      if (collection && main_key) {
         let searching_elem = createBox(obj, "Searching...");
         let document = await (
           await fetch(`${API_URL}/search/${collection}/${value}`, {

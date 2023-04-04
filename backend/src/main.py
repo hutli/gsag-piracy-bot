@@ -77,10 +77,16 @@ def find_best_route(booty: list[dict]) -> list:
     for b in booty:
         logger.info(b)
         for s in b["resource"]["sell"]:
-            if s not in sell_locations:
-                sell_locations[s] = []
+            profit = s["price"] / b["resource"]["sell"][0]["price"]
+            if profit > 0.9:
+                if s["location"] not in sell_locations:
+                    sell_locations[s["location"]] = []
 
-            sell_locations[s].append(b)
+                sell_locations[s["location"]].append(
+                    b["resource"]["name"]
+                    if profit == 1
+                    else f'{b["resource"]["name"]} ({profit * 100:0.02}%)'
+                )
 
     sell_locations_sorted = sorted(
         [([k], v) for k, v in sell_locations.items()],
@@ -179,13 +185,17 @@ def post_to_discord(body: DiscordData) -> None:
     fields = [
         {
             "name": "Route",
-            "value": ", ".join(body.routes),
+            "value": ", ".join(r["name"] for r in body.routes),
             "inline": True,
         },
         {
             "name": "Target",
-            "value": ", ".join(body.target_ships)
-            + ("\n" + f"({', '.join(body.target_names)})" if body.target_names else ""),
+            "value": ", ".join(s["Name"] for s in body.target_ships)
+            + (
+                ("\n" + f"({', '.join(body.target_names)})")
+                if body.target_names
+                else ""
+            ),
             "inline": True,
         },
         {
@@ -209,9 +219,7 @@ def post_to_discord(body: DiscordData) -> None:
         sell_strs = []
         for locations, location_resources in sell_locations:
             sell_strs.append(
-                ", ".join([r["resource"]["name"] for r in location_resources])
-                + ":\n - "
-                + "\n - ".join(locations)
+                ", ".join(location_resources) + ":\n - " + "\n - ".join(locations)
             )
 
         fields += [
@@ -221,7 +229,7 @@ def post_to_discord(body: DiscordData) -> None:
                     f'{b["amount"]} SCU of {b["resource"]["name"]}' for b in body.booty
                 )
                 + "\n----------------\n"
-                + f"{sum(b['amount'] * b['resource']['value'] for b in body.booty)} aUEC",
+                + f"{sum(b['amount'] * b['resource']['sell'][0]['price'] for b in body.booty)} aUEC",
                 "inline": False,
             },
             {

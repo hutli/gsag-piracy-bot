@@ -53,7 +53,7 @@
         <input
           class="form-input"
           onkeydown="return search('members', event, this, 'nick');"
-          onblur="return search('members', event, this, 'nick', keys=null);"
+          onblur="return search('members', event, this, 'nick', null);"
           type="text"
           id="crew"
           name="crew"
@@ -68,7 +68,7 @@
         <input
           class="form-input"
           onkeydown="return search('locations', event, this, 'name');"
-          onblur="return search('locations', event, this, 'name', keys=null);"
+          onblur="return search('locations', event, this, 'name', null);"
           type="text"
           name="routes"
         />
@@ -81,7 +81,7 @@
         <input
           class="form-input"
           onkeydown="return search('ships', event, this, 'Name');"
-          onblur="return search('ships', event, this, 'Name', keys=null);"
+          onblur="return search('ships', event, this, 'Name', null);"
           type="text"
           name="target_ships"
         />
@@ -93,8 +93,8 @@
         <div class="results-container"></div>
         <input
           class="form-input"
-          onkeydown="return search(null, event, this, keys=['Enter', ' ', ',']);"
-          onblur="return search(null, event, this, keys=null);"
+          onkeydown="return search(null, event, this,null, ['Enter', ' ', ',']);"
+          onblur="return search(null, event, this, null, null);"
           type="text"
           name="target_names"
         />
@@ -107,7 +107,7 @@
         <input
           class="form-input"
           onkeydown="return splitSearch('resources', event, this, 'name');"
-          onblur="return splitSearch('members', event, this, 'name', keys=null);"
+          onblur="return splitSearch('resources', event, this, 'name', null);"
           type="text"
           name="booty"
         />
@@ -120,7 +120,7 @@
         <input
           class="form-input"
           onkeydown="return search('members', event, this, 'nick');"
-          onblur="return search('members', event, this, 'nick', keys=null);"
+          onblur="return search('members', event, this, 'nick', null);"
           type="text"
           name="last_hit"
         />
