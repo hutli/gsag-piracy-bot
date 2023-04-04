@@ -9,7 +9,7 @@ from typing import Any, Callable
 
 import discord
 import httpx
-from discord import Member, VoiceChannel
+from discord import Member, VoiceChannel, TextChannel
 from dotenv import load_dotenv
 from fastapi import FastAPI
 from loguru import logger
@@ -19,7 +19,7 @@ from pydantic import BaseModel
 
 load_dotenv()
 
-POSTING_CHANNEL_ID: str = environ["POSTING_CHANNEL_ID"]
+POSTING_CHANNEL_ID: int = int(environ["POSTING_CHANNEL_ID"])
 DISCORD_API_TOKEN: str = environ["DISCORD_API_TOKEN"]
 DISCORD_GUILD_ID: str = environ["DISCORD_GUILD_ID"]
 
@@ -38,13 +38,6 @@ with open(LOCATIONS_FILE) as f:
     LOCATIONS = json.load(f)
 
 DISCORD_MESSAGE_START = ""
-DISCORD_API_ENDPOINT = "https://discordapp.com/api"
-DISCORD_HEADERS = {
-    "Authorization": f"Bot {DISCORD_API_TOKEN}",
-    "Content-Type": "application/json",
-}
-DISCORD_CHANNEL_ENDPOINT = f"{DISCORD_API_ENDPOINT}/channels/{POSTING_CHANNEL_ID}"
-DISCORD_MESSAGE_ENDPOINT = f"{DISCORD_CHANNEL_ENDPOINT}/messages"
 
 
 class DiscordData(BaseModel):
@@ -179,7 +172,7 @@ def search_locations(search_str: str) -> dict:
 
 
 @app.post("/discord")
-def post_to_discord(body: DiscordData) -> None:
+async def post_to_discord(body: DiscordData) -> None:
     body.routes = sorted(body.routes, key=lambda r: str(r["name"]))
     body.target_ships = sorted(body.target_ships, key=lambda s: str(s["Name"]))
     body.target_names = sorted(body.target_names)
@@ -187,82 +180,53 @@ def post_to_discord(body: DiscordData) -> None:
     body.last_hit = sorted(body.last_hit, key=lambda l: str(l["nick"]))
     body.booty = sorted(body.booty, key=lambda b: str(b["resource"]["name"]))
 
-    fields = [
-        {
-            "name": "Route",
-            "value": ", ".join(r["name"] for r in body.routes),
-            "inline": True,
-        },
-        {
-            "name": "Target",
-            "value": ", ".join(s["Name"] for s in body.target_ships)
-            + (
-                ("\n" + f"({', '.join(body.target_names)})")
-                if body.target_names
-                else ""
-            ),
-            "inline": True,
-        },
-        {
-            "name": "Crew",
-            "value": ", ".join(f"<@{c['id']}>" for c in body.crew),
-            "inline": False,
-        },
-    ]
+    embed = discord.Embed(
+        title="Piracy achieved", type="rich", description="", color=0xDC322F
+    )
+
+    embed.add_field(
+        name="Route", value=", ".join(r["name"] for r in body.routes), inline=True
+    )
+    embed.add_field(
+        name="Target",
+        value=", ".join(s["Name"] for s in body.target_ships)
+        + (("\n" + f"({', '.join(body.target_names)})") if body.target_names else ""),
+        inline=True,
+    )
+    embed.add_field(
+        name="Crew", value=", ".join(f"<@{c['id']}>" for c in body.crew), inline=False
+    )
+
     if body.last_hit:
-        fields += [
-            {
-                "name": "Last Hit",
-                "value": ", ".join(f"<@{c['id']}>" for c in body.last_hit),
-                "inline": False,
-            }
-        ]
+        embed.add_field(
+            name="Last Hit",
+            value=", ".join(f"<@{c['id']}>" for c in body.last_hit),
+            inline=False,
+        )
 
     if body.booty:
         sell_locations = find_best_route(body.booty)
-        logger.debug(sell_locations)
         sell_strs = []
         for locations, location_resources in sell_locations:
             sell_strs.append(
                 ", ".join(location_resources) + ":\n - " + "\n - ".join(locations)
             )
 
-        fields += [
-            {
-                "name": "Booty",
-                "value": "\n".join(
-                    f'{b["amount"]} SCU of {b["resource"]["name"]}' for b in body.booty
-                )
-                + "\n----------------\n"
-                + f"{sum(b['amount'] * b['resource']['sell'][0]['price'] for b in body.booty)} aUEC",
-                "inline": False,
-            },
-            {
-                "name": "Sell at",
-                "value": "\n\n".join(sell_strs),
-                "inline": False,
-            },
-        ]
-
-    json_msg = {
-        "content": DISCORD_MESSAGE_START,
-        "tts": False,
-        "embeds": [
-            {
-                "type": "rich",
-                "title": f"Piracy achieved",
-                "description": "",
-                "color": 0xDC322F,
-                "fields": fields,
-                "timestamp": str(datetime.datetime.utcnow()),
-            }
-        ],
-    }
+        embed.add_field(
+            name="Booty",
+            value="\n".join(
+                f'{b["amount"]} SCU of {b["resource"]["name"]}' for b in body.booty
+            )
+            + "\n----------------\n"
+            + f"{sum(b['amount'] * b['resource']['sell'][0]['price'] for b in body.booty)} aUEC",
+            inline=False,
+        )
+        embed.add_field(name="Sell at", value="\n\n".join(sell_strs), inline=False)
 
     # if body.screenshot_url"]:
     #     json_msg["embeds"][0]["thumbnail"] = {"url": body.screenshot_url"]}
 
-    with open("test.json", "w") as f:
-        json.dump(json_msg, f)
-
-    httpx.post(DISCORD_MESSAGE_ENDPOINT, headers=DISCORD_HEADERS, json=json_msg)
+    if isinstance(channel := discord_bot.get_channel(POSTING_CHANNEL_ID), TextChannel):
+        await channel.send(content=DISCORD_MESSAGE_START, tts=False, embed=embed)
+    else:
+        logger.error(f'"{POSTING_CHANNEL_ID}" not text channel')
