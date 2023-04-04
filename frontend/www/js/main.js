@@ -11,6 +11,16 @@ function createBox(obj, text, value) {
   return elem;
 }
 
+function setCurrentCrew() {
+  fetch(`${API_URL}/current_crew`, { credentials: "include" }).then((r) =>
+    r.json().then((members) => {
+      for (let member of members) {
+        createBox(document.querySelector("#crew"), member.nick, member);
+      }
+    })
+  );
+}
+
 async function splitSearch(
   collection,
   event,
@@ -80,18 +90,20 @@ async function search(collection, event, obj, main_key, keys = ["Enter", ","]) {
 }
 
 async function postToDiscord(form) {
+  [...form.getElementsByClassName("autocomplete-input-container")].forEach(
+    (i) => i.classList.add("disabled")
+  );
+  [...form.getElementsByTagName("input")].forEach((i) => (i.disabled = true));
+
   let body = {};
 
   for (let container of form.getElementsByTagName("fieldset")) {
-    console.log(container);
     body[container.querySelector("input").name] = [
       ...container.getElementsByClassName("result-box"),
     ].map((r) => JSON.parse(r.getAttribute("value")));
   }
 
-  console.log(body);
-
-  let response = await fetch(`${API_URL}/discord`, {
+  await fetch(`${API_URL}/discord`, {
     method: "POST",
     credentials: "include",
     headers: {
@@ -99,13 +111,14 @@ async function postToDiscord(form) {
     },
     body: JSON.stringify(body),
   });
-  console.log(await response.text());
+
+  [...form.getElementsByClassName("autocomplete-input-container")].forEach(
+    (i) => i.classList.remove("disabled")
+  );
+  [...form.getElementsByTagName("input")].forEach((i) => (i.disabled = false));
+
+  [...form.getElementsByClassName("result-box")].forEach((r) => r.remove());
+  setCurrentCrew();
 }
 
-fetch(`${API_URL}/current_crew`, { credentials: "include" }).then((r) =>
-  r.json().then((members) => {
-    for (let member of members) {
-      createBox(document.querySelector("#crew"), member.nick, member);
-    }
-  })
-);
+setCurrentCrew();
