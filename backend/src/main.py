@@ -59,12 +59,17 @@ class DiscordData(BaseModel):
 # DISCORD
 intents = discord.Intents.default()
 intents.members = True
-discord_client = discord.Client(intents=intents)
+discord_bot = discord.Client(intents=intents)
 
 
-@discord_client.event
+@discord_bot.event
 async def on_ready() -> None:
-    logger.info(f'Discord logged in as "{discord_client.user}"')
+    logger.info(f'Discord logged in as "{discord_bot.user}"')
+    await discord_bot.change_presence(
+        activity=discord.Activity(
+            type=discord.ActivityType.watching, name="for targets"
+        )
+    )
 
 
 # FastAPI
@@ -115,14 +120,14 @@ def find_best_route(booty: list[dict]) -> list:
 
 @app.on_event("startup")
 async def startup_event() -> None:
-    asyncio.create_task(discord_client.start(DISCORD_API_TOKEN))
+    asyncio.create_task(discord_bot.start(DISCORD_API_TOKEN))
 
 
 @app.get("/current_crew")
 async def current_crew() -> list[dict]:
     return [
         {"nick": member.nick, "id": str(member.id)}
-        for channel in discord_client.guilds[0].channels
+        for channel in discord_bot.guilds[0].channels
         if isinstance(channel, VoiceChannel)
         for member in channel.members
     ]
@@ -150,7 +155,7 @@ def _search(collection: list, search_str: str, to_str: Callable[[Any], str]) -> 
 @app.get("/search/members/{search_str}")
 def search_members(search_str: str) -> dict:
     document = _search(
-        [m for m in discord_client.guilds[0].members if not m.bot],
+        [m for m in discord_bot.guilds[0].members if not m.bot],
         search_str,
         lambda x: str(x.nick),
     )
