@@ -133,6 +133,8 @@ pydantic==1.10.7
     # via fastapi
 python-dotenv==1.0.0
     # via -r requirements.in
+python-multipart==0.0.6
+    # via -r requirements.in
 pyyaml==6.0
     # via
     #   huggingface-hub

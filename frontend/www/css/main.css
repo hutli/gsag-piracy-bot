@@ -1,6 +1,7 @@
 html {
   background-color: #333333;
   color: whitesmoke;
+  font-family: "Courier New", Courier, monospace;
 }
 
 form {
@@ -11,6 +12,9 @@ form {
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+}
+a {
+  color: lightblue;
 }
 
 .form-input {
@@ -51,6 +55,12 @@ form {
   padding: 3px;
   margin: auto 5px auto 5px;
 }
+.center-text {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
 #submit {
   background-color: lightblue;
   color: black;

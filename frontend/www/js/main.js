@@ -25,7 +25,7 @@ async function splitSearch(
   collection,
   event,
   obj,
-  main_key,
+  to_str,
   keys = ["Enter", ","]
 ) {
   if (!keys || keys.includes(event.key)) {
@@ -56,7 +56,7 @@ async function splitSearch(
       ).json();
 
       searching_elem.remove();
-      createBox(obj, `${document[main_key]} (${amount} SCU)`, {
+      createBox(obj, `${to_str(document)} (${amount} SCU)`, {
         resource: document,
         amount: amount,
       });
@@ -65,13 +65,13 @@ async function splitSearch(
   }
 }
 
-async function search(collection, event, obj, main_key, keys = ["Enter", ","]) {
+async function search(collection, event, obj, to_str, keys = ["Enter", ","]) {
   if (!keys || keys.includes(event.key)) {
     let value = obj.value.trim();
     obj.value = "";
 
     if (value) {
-      if (collection && main_key) {
+      if (collection) {
         let searching_elem = createBox(obj, "Searching...");
         let document = await (
           await fetch(`${API_URL}/search/${collection}/${value}`, {
@@ -80,7 +80,7 @@ async function search(collection, event, obj, main_key, keys = ["Enter", ","]) {
         ).json();
 
         searching_elem.remove();
-        createBox(obj, document[main_key], document);
+        createBox(obj, to_str(document), document);
       } else {
         createBox(obj, value, value);
       }
@@ -103,6 +103,23 @@ async function postToDiscord(form) {
     ].map((r) => JSON.parse(r.getAttribute("value")));
   }
 
+  let screenshot_elem = form.querySelector("#screenshot");
+  if (screenshot_elem.files) {
+    let screenshot = screenshot_elem.files[0];
+    let formData = new FormData();
+    formData.append("file", screenshot, screenshot.name);
+    let response = await (
+      await fetch(`${API_URL}/upload/sc`, {
+        method: "PUT",
+        body: formData,
+      })
+    ).json();
+
+    body.screenshot_url = response.image_url;
+  } else {
+    body.screenshot_url = "";
+  }
+
   await fetch(`${API_URL}/discord`, {
     method: "POST",
     credentials: "include",
@@ -116,6 +133,7 @@ async function postToDiscord(form) {
     (i) => i.classList.remove("disabled")
   );
   [...form.getElementsByTagName("input")].forEach((i) => (i.disabled = false));
+  form.querySelector("#screenshot").disabled = true;
 
   [...form.getElementsByClassName("result-box")].forEach((r) => r.remove());
   setCurrentCrew();

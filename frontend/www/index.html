@@ -46,14 +46,27 @@
 <body>
   <script src="/js/main.js"></script>
   <form>
+    <h2>Star Citizen Assisted Piracy (SCAP)</h2>
+    <span>
+      This is SCAP. A tool designed by
+      <a href="https://gsag.space" target="_blank">Ghost Squadron (GSAG)</a> to
+      help log piracy events. All fields are optional and can contain multiple
+      values if desired. Filds will autocorrect for you.</span
+    ><br /><span
+      ><b
+        >Please wait with submitting until all boxes have stopped
+        "Searching..."</b
+      ></span
+    ><br /><br /><span class="center-text"><b>Happy piracy! o7</b></span
+    ><br />
     <fieldset>
       <legend>Crew:</legend>
       <div class="autocomplete-input-container">
         <div class="results-container"></div>
         <input
           class="form-input"
-          onkeydown="return search('members', event, this, 'nick');"
-          onblur="return search('members', event, this, 'nick', null);"
+          onkeydown="return search('members', event, this, (d) => d.nick);"
+          onblur="return search('members', event, this, (d) => d.nick, null);"
           type="text"
           id="crew"
           name="crew"
@@ -67,8 +80,8 @@
         <div class="results-container"></div>
         <input
           class="form-input"
-          onkeydown="return search('locations', event, this, 'name');"
-          onblur="return search('locations', event, this, 'name', null);"
+          onkeydown="return search('locations', event, this, (d) => d.name);"
+          onblur="return search('locations', event, this, (d) => d.name, null);"
           type="text"
           name="routes"
         />
@@ -80,8 +93,8 @@
         <div class="results-container"></div>
         <input
           class="form-input"
-          onkeydown="return search('ships', event, this, 'Name');"
-          onblur="return search('ships', event, this, 'Name', null);"
+          onkeydown="return search('ships', event, this, (d) => `${d.Manufacturer} ${d.Name}`);"
+          onblur="return search('ships', event, this, (d) => `${d.Manufacturer} ${d.Name}`, null);"
           type="text"
           name="target_ships"
         />
@@ -93,7 +106,7 @@
         <div class="results-container"></div>
         <input
           class="form-input"
-          onkeydown="return search(null, event, this,null, ['Enter', ' ', ',']);"
+          onkeydown="return search(null, event, this, null, ['Enter', ' ', ',']);"
           onblur="return search(null, event, this, null, null);"
           type="text"
           name="target_names"
@@ -106,8 +119,8 @@
         <div class="results-container"></div>
         <input
           class="form-input"
-          onkeydown="return splitSearch('resources', event, this, 'name');"
-          onblur="return splitSearch('resources', event, this, 'name', null);"
+          onkeydown="return splitSearch('resources', event, this, (d) => d.name);"
+          onblur="return splitSearch('resources', event, this, (d) => d.name, null);"
           type="text"
           name="booty"
         />
@@ -119,12 +132,21 @@
         <div class="results-container"></div>
         <input
           class="form-input"
-          onkeydown="return search('members', event, this, 'nick');"
-          onblur="return search('members', event, this, 'nick', null);"
+          onkeydown="return search('members', event, this, (d) => d.nick);"
+          onblur="return search('members', event, this, (d) => d.nick, null);"
           type="text"
           name="last_hit"
         />
       </div>
+    </fieldset>
+    <fieldset>
+      <legend>Screenshot:</legend>
+      <input
+        type="file"
+        id="screenshot"
+        name="screenshot"
+        accept="image/png, image/jpeg"
+      />
     </fieldset>
     <input
       value="Submit"

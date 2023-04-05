@@ -3,25 +3,28 @@ import csv
 import datetime
 import io
 import json
+import time
 from os import environ
 from pathlib import Path
 from typing import Any, Callable
 
 import discord
 import httpx
-from discord import Member, VoiceChannel, TextChannel
+from discord import Member, TextChannel, VoiceChannel
 from dotenv import load_dotenv
-from fastapi import FastAPI
+from fastapi import FastAPI, HTTPException, UploadFile
 from loguru import logger
-from sentence_transformers import SentenceTransformer, util  # type: ignore
-
 from pydantic import BaseModel
+from sentence_transformers import SentenceTransformer, util  # type: ignore
 
 load_dotenv()
 
-POSTING_CHANNEL_ID: int = int(environ["POSTING_CHANNEL_ID"])
-DISCORD_API_TOKEN: str = environ["DISCORD_API_TOKEN"]
-DISCORD_GUILD_ID: str = environ["DISCORD_GUILD_ID"]
+POSTING_CHANNEL_ID = int(environ["POSTING_CHANNEL_ID"])
+DISCORD_API_TOKEN = environ["DISCORD_API_TOKEN"]
+DISCORD_GUILD_ID = environ["DISCORD_GUILD_ID"]
+
+FILE_SERVER_BASE_URL = environ["FILE_SERVER_BASE_URL"]
+FILE_DIR = Path(environ["FILE_DIR"])
 
 SENTENCE_TRANSFORMER = SentenceTransformer("sentence-transformers/all-mpnet-base-v2")
 
@@ -47,6 +50,7 @@ class DiscordData(BaseModel):
     target_names: list
     booty: list
     last_hit: list
+    screenshot_url: str
 
 
 # DISCORD
@@ -163,12 +167,29 @@ def search_resources(search_str: str) -> dict:
 
 @app.get("/search/ships/{search_str}")
 def search_ships(search_str: str) -> dict:
-    return dict(_search(SHIPS, search_str, lambda x: str(x["Name"])))
+    return dict(
+        _search(SHIPS, search_str, lambda x: f'{x["Manufacturer"]} {(x["Name"])}')
+    )
 
 
 @app.get("/search/locations/{search_str}")
 def search_locations(search_str: str) -> dict:
     return dict(_search(LOCATIONS, search_str, lambda x: str(x["name"])))
+
+
+@app.put("/upload/sc")
+async def upload(file: UploadFile) -> dict:
+    if file.content_type == "image/jpeg":
+        filename = f"{time.time()}.jpeg"
+    elif file.content_type == "image/png":
+        filename = f"{time.time()}.png"
+    else:
+        raise HTTPException(415, "Only image files accepted")
+
+    with open(FILE_DIR / filename, "wb") as f:
+        f.write(await file.read())
+
+    return {"image_url": f"{FILE_SERVER_BASE_URL}/{filename}"}
 
 
 @app.post("/discord")
@@ -184,18 +205,29 @@ async def post_to_discord(body: DiscordData) -> None:
         title="Piracy achieved", type="rich", description="", color=0xDC322F
     )
 
-    embed.add_field(
-        name="Route", value=", ".join(r["name"] for r in body.routes), inline=True
-    )
-    embed.add_field(
-        name="Target",
-        value=", ".join(s["Name"] for s in body.target_ships)
-        + (("\n" + f"({', '.join(body.target_names)})") if body.target_names else ""),
-        inline=True,
-    )
-    embed.add_field(
-        name="Crew", value=", ".join(f"<@{c['id']}>" for c in body.crew), inline=False
-    )
+    if body.routes:
+        embed.add_field(
+            name="Route", value=", ".join(r["name"] for r in body.routes), inline=True
+        )
+
+    if body.target_ships:
+        embed.add_field(
+            name="Target",
+            value=", ".join(s["Name"] for s in body.target_ships)
+            + (
+                ("\n" + f"({', '.join(body.target_names)})")
+                if body.target_names
+                else ""
+            ),
+            inline=True,
+        )
+
+    if body.crew:
+        embed.add_field(
+            name="Crew",
+            value=", ".join(f"<@{c['id']}>" for c in body.crew),
+            inline=False,
+        )
 
     if body.last_hit:
         embed.add_field(
@@ -223,8 +255,8 @@ async def post_to_discord(body: DiscordData) -> None:
         )
         embed.add_field(name="Sell at", value="\n\n".join(sell_strs), inline=False)
 
-    # if body.screenshot_url"]:
-    #     json_msg["embeds"][0]["thumbnail"] = {"url": body.screenshot_url"]}
+    if body.screenshot_url:
+        embed.set_thumbnail(url=body.screenshot_url)
 
     if isinstance(channel := discord_bot.get_channel(POSTING_CHANNEL_ID), TextChannel):
         await channel.send(content=DISCORD_MESSAGE_START, tts=False, embed=embed)

@@ -4,5 +4,6 @@ httpx
 loguru
 mypy
 python-dotenv
+python-multipart
 sentence-transformers
 uvicorn

@@ -6,6 +6,11 @@ services:
     image: scap-backend
     stdin_open: true
     tty: true
+    volumes:
+      - "/mnt/data/public/sc/:/upload/"
+    environment:
+      FILE_DIR: "/upload/"
+      FILE_SERVER_BASE_URL: "https://public.hutli.hu/sc"
     ports:
       - 5142:80
     restart: "unless-stopped"
