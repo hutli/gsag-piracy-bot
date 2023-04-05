@@ -192,6 +192,27 @@ async def upload(file: UploadFile) -> dict:
     return {"image_url": f"{FILE_SERVER_BASE_URL}/{filename}"}
 
 
+@app.get("/profit")
+async def profit() -> float:
+    total = 0.0
+    if isinstance(channel := discord_bot.get_channel(POSTING_CHANNEL_ID), TextChannel):
+        async for message in channel.history(limit=None):
+            for embed in message.embeds:
+                for field in embed.fields:
+                    if (field.name or "").lower() == "booty":
+                        for potential_number in (
+                            (field.value or "").split("\n")[-1].replace(",", "").split()
+                        ):
+                            try:
+                                total += float(potential_number)
+                                break
+                            except:
+                                ...
+    else:
+        logger.error(f'"{POSTING_CHANNEL_ID}" not text channel')
+    return total
+
+
 @app.post("/discord")
 async def post_to_discord(body: DiscordData) -> None:
     body.routes = sorted(body.routes, key=lambda r: str(r["name"]))

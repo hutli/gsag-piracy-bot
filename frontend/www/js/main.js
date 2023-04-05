@@ -11,8 +11,20 @@ function createBox(obj, text, value) {
   return elem;
 }
 
+function calcProfit(elem) {
+  elem.disabled = true;
+  elem.innerText = "Calculating...";
+  fetch(`${API_URL}/profit`).then((r) => {
+    r.text().then((total) => {
+      let totalSpan = document.createElement("b");
+      totalSpan.innerText = `${Number(total).toLocaleString()} aUEC`;
+      elem.parentNode.replaceChild(totalSpan, elem);
+    });
+  });
+}
+
 function setCurrentCrew() {
-  fetch(`${API_URL}/current_crew`, { credentials: "include" }).then((r) =>
+  fetch(`${API_URL}/current_crew`).then((r) =>
     r.json().then((members) => {
       for (let member of members) {
         createBox(document.querySelector("#crew"), member.nick, member);
